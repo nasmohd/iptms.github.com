@@ -1,11 +1,67 @@
 <html>
-<head>
-    <title> Git </title>
-    
+<head> <title>Data Tabling</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="bootstrap-4.1.3-dist/css/bootstrap.css" rel="stylesheet">
     </head>
 <body>
-    <p style = "color:green"> Git Success </p>
+    <script src="func.js" type="text/javascript"></script>
+    <hr/>
+ 
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+        
+        <div style="margin-left: 18px;">
+        <h2 class="text-Primary"> STUDENT LIST </h2>
+        <h5 class="text-Primary"> Add/Remove Student </h5></div>
+             
+            <div class="col-sm-9">
+            <input id="fname" class="col-sm-3 form-control float-left mr-3" type="text" placeholder="First Name (eg. Harold)"/>
+            
+            <input id="lname" class="col-sm-3 form-control float-left mr-3" type="text" placeholder="Second Name (eg. Finch)"/>
+                
+            <input id="course" class="col-sm-3 form-control float-left mr-3" type="text" placeholder="Course (eg. OD17-COE)"/>
+            
+            <div class="mr-2 justify-content-center">
+            
+            <button class="btn btn-sm btn-success" onclick="addStudent()"> Add </button>
+            
+            <button class="btn btn-sm btn-danger" onclick="removeStudent()"> Remove </button>
+        </div>
+        
+        </div>
+        </div>
+        </div></div>
+    <hr/>
+    
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-10">
+            <table class="col-sm-9 table table-striped table-bordered table-hover" style="margin-left: 18px;">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col"> SN </th>
+                    <th scope="col"> First Name </th>
+                    <th scope="col"> Second Name </th>
+                    <th scope="col"> Course </th>     
+                </tr> 
+                </thead>
+            
+            <tbody>
+<!--                Add content here which can also be removed                      whenever is needed as requested   -->
+                
+                
+            </tbody>
+            </table>
+            </div>
+<!--            End of the col-sm-8 div class-->
+            
+        </div>
+    </div>
     
     
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
     </body>
 </html>
